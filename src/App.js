@@ -10,8 +10,7 @@ function App() {
 
   const getDataWeather = () => {
     let key = "84a3781201a7f9a9bda21e4f05b6c2f0";
-    axios
-      .get(
+    axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&appid=${key}`
       )
       .then((res) => {
